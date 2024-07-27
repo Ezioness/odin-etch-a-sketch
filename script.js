@@ -28,8 +28,12 @@ let addHoverEffect = () => {
     let cells = document.querySelectorAll(".cell");
     cells.forEach(cell => {
         cell.addEventListener("mouseover", e => {
-            e.target.classList.add("hovered")
-            console.log("caca");
+            const red = Math.random() * 255;
+            const green = Math.random() * 255;
+            const blue = Math.random() * 255;
+            if(!e.target.style.backgroundColor) {
+                e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
+            }
         });
     })
 }
