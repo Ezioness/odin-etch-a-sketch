@@ -1,12 +1,41 @@
 body {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header-container {
+    text-align: center;
+    flex-shrink: 2;
+}
+
+h1 {
+    margin: 10px 0;
+}
+#new-button{
+    background-color: #42aaf5;
+    border: 0;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#new-button:hover {
+    background-color: #014575;
+    color: white;
 }
 
 #grid-container {
-    height: 100vh;
+    width: 800px;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .row {
@@ -17,4 +46,8 @@ body {
 .cell {
     flex: 1;
     border: 1px solid black;
+}
+
+.hovered {
+    background-color: #42aaf5;
 }
