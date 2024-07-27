@@ -46,4 +46,5 @@ h1 {
 .cell {
     flex: 1;
     border: 1px solid black;
+    opacity: 0.1;
 }

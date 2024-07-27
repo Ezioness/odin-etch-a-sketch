@@ -31,8 +31,13 @@ let addHoverEffect = () => {
             const red = Math.random() * 255;
             const green = Math.random() * 255;
             const blue = Math.random() * 255;
+            
             if(!e.target.style.backgroundColor) {
                 e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
+            } else {
+                if(e.target.style.opacity < 1) {
+                    e.target.style.opacity = +e.target.style.opacity + 0.1;
+                }
             }
         });
     })
